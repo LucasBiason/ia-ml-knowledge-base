@@ -4,7 +4,9 @@ credentials.json
 
 # Arquivos de configuração sensíveis
 .env
+venv/
 config.env
+*chroma/
 
 # Cache Python
 __pycache__/
