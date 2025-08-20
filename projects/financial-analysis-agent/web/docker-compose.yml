@@ -1,0 +1,18 @@
+services:
+  financial-agent-web:
+    build: .
+    container_name: financial-agent-web
+    ports:
+      - "8501:8500"
+    env_file:
+      - ../.env
+    volumes:
+      - ./src:/app/src
+    restart: unless-stopped
+    networks:
+      - financial-network
+
+
+networks:
+  financial-network:
+    driver: bridge
