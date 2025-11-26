@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="assets/banner.png" alt="AI ML Knowledge Base" width="100%"/>
+</div>
+
 # 🧠 IA-ML-KNOWLEDGE-BASE
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -24,9 +28,35 @@ Este repositório representa um **mega banco de conhecimento** sobre Inteligênc
 - 🛠️ Desenvolver APIs profissionais
 - 📚 Criar documentação técnica de referência
 - 💼 Construir banco de conhecimento
+- 📝 Publicar artigos técnicos (Hashnode, Dev.to)
 
 ---
 
+## 📁 **ESTRUTURA DO PROJETO**
+
+O projeto está organizado **por temas dentro de Inteligência Artificial**:
+
+```
+ia-ml-knowledge-base/
+├── Machine Learning/          # ML tradicional, scikit-learn
+├── Deep Learning/             # Redes neurais profundas
+├── LLMs/                     # Large Language Models
+├── LangChain/                # Framework para LLMs
+├── Computer Vision/          # Visão computacional
+├── NLP/                      # Processamento de linguagem natural
+├── OpenAI API/                # Integrações OpenAI
+├── AWS ML Services/          # Serviços AWS para ML
+├── MLOps/                    # Deploy e monitoramento
+└── articles/                 # Artigos formatados para publicação
+```
+
+Cada tema contém:
+- `notebooks/` - Notebooks Jupyter práticos
+- `tutorials/` - Tutoriais passo a passo
+- `projects/` - Projetos completos
+- `snippets/` - Códigos reutilizáveis
+
+---
 
 ## 🛠️ **STACK UTILIZADA**
 
@@ -52,7 +82,55 @@ Este repositório representa um **mega banco de conhecimento** sobre Inteligênc
 
 ---
 
-## 📄 **LICENÇA**
+## 📚 **NAVEGAÇÃO RÁPIDA**
+
+### **Por Tema:**
+- [Machine Learning](./Machine%20Learning/) - Algoritmos clássicos de ML
+- [Deep Learning](./Deep%20Learning/) - Redes neurais profundas
+- [LLMs](./LLMs/) - Large Language Models
+- [LangChain](./LangChain/) - Framework para LLMs
+- [Computer Vision](./Computer%20Vision/) - Visão computacional
+- [NLP](./NLP/) - Processamento de linguagem natural
+- [OpenAI API](./OpenAI%20API/) - Integrações OpenAI
+- [AWS ML Services](./AWS%20ML%20Services/) - Serviços AWS
+- [MLOps](./MLOps/) - Deploy e monitoramento
+
+### **Documentação:**
+- [CONTRIBUTING.md](./CONTRIBUTING.md) - Guia de contribuição
+- [docs-private/](./docs-private/) - Documentação privada (não versionada)
+
+---
+
+## 🚀 **COMO USAR**
+
+### **Instalação:**
+```bash
+# Clone o repositório
+git clone https://github.com/LucasBiason/ia-ml-knowledge-base.git
+cd ia-ml-knowledge-base
+
+# Crie um ambiente virtual
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
+# ou
+.venv\Scripts\activate  # Windows
+
+# Instale as dependências
+pip install -r requirements.txt
+```
+
+### **Executar Notebooks:**
+```bash
+# Inicie o Jupyter
+jupyter notebook
+
+# Ou use JupyterLab
+jupyter lab
+```
+
+---
+
+## 📝 **LICENÇA**
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
