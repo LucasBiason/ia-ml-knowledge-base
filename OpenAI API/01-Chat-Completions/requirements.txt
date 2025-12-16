@@ -1,0 +1,5 @@
+# Dependências para Chat Completions
+openai>=2.7.0
+python-dotenv>=1.2.0
+pandas>=2.0.0
+
