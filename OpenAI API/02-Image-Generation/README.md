@@ -42,6 +42,8 @@ Aprenda a editar imagens existentes:
 
 ## Modelos Disponíveis
 
+![Infográfico: Geração de Imagens com DALL-E](../assets/imagens/tutorials/dalle-generation-flow.png)
+
 ### DALL-E 3
 - Modelo mais recente e avançado
 - Sempre gera 1 imagem por requisição

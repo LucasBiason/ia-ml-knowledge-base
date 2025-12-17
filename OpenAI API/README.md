@@ -6,6 +6,8 @@ Base de conhecimento completa e didática sobre a API da OpenAI, consolidando ma
 
 ## 📚 Estrutura do Conteúdo
 
+![Infográfico: Arquitetura Geral da OpenAI API](assets/imagens/tutorials/arquitetura-openai-api.png)
+
 ### 00 - Fundamentos
 Documentação teórica sobre OpenAI, arquitetura da API e conceitos fundamentais.
 

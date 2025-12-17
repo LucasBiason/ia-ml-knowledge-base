@@ -44,6 +44,8 @@ Aprenda a transcrever e traduzir áudio:
 
 ## Modelos Disponíveis
 
+![Infográfico: Pipeline do Whisper e TTS](../assets/imagens/tutorials/whisper-pipeline.png)
+
 ### Text-to-Speech
 - **tts-1**: Padrão, rápido ($15/milhão de caracteres)
 - **tts-1-hd**: Alta qualidade ($30/milhão de caracteres)

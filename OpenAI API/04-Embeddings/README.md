@@ -30,6 +30,8 @@ Aprenda a implementar busca semântica:
 
 ## Modelos Disponíveis
 
+![Infográfico: Busca Semântica com Embeddings](../assets/imagens/tutorials/embeddings-semantic-search.png)
+
 - **text-embedding-3-small**: 1536 dimensões, mais rápido
 - **text-embedding-3-large**: 3072 dimensões, melhor qualidade
 
