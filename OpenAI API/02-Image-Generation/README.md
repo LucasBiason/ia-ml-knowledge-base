@@ -1,95 +1,78 @@
 # Image Generation - DALL-E
 
-Esta seção contém tutoriais sobre geração de imagens usando a API DALL-E da OpenAI.
-
-## Tutoriais Disponíveis
-
-### 01 - DALL-E Básico
-**Arquivo:** `notebooks/01-dalle-basico.ipynb`
-
-Aprenda os fundamentos da geração de imagens:
-- Como gerar imagens com DALL-E 3
-- Parâmetros principais (model, prompt, size, quality)
-- Salvar imagens localmente
-
-**Pré-requisitos:** Nenhum
+Esta secao apresenta tutoriais sobre a utilizacao da API DALL-E para geracao, variacao e edicao de imagens atraves de modelos de inteligencia artificial.
 
 ---
 
-### 02 - Variações de Imagem
-**Arquivo:** `notebooks/02-dalle-variacoes.ipynb`
+## Tutoriais Disponiveis
 
-Explore variações de imagens:
-- Gerar múltiplas imagens com DALL-E 2
-- Criar variações de uma imagem existente
-- Comparar DALL-E 2 vs DALL-E 3
+### 1. DALL-E Basico
+**Arquivo:** [01-dalle-basico.ipynb](notebooks/01-dalle-basico.ipynb)
 
-**Pré-requisitos:** Tutorial 01
-
----
-
-### 03 - Edição de Imagens
-**Arquivo:** `notebooks/03-dalle-edicao.ipynb` (Em breve)
-
-Aprenda a editar imagens existentes:
-- Editar partes específicas de imagens
-- Adicionar elementos a imagens
-- Casos de uso práticos
-
-**Pré-requisitos:** Tutorial 01
+Fundamentos da geracao de imagens:
+- Requisicao simples com DALL-E 3
+- Parametros de configuracao (model, size, quality, style)
+- Persistencia de imagens localmente
 
 ---
 
-## Modelos Disponíveis
+### 2. Variacoes de Imagem
+**Arquivo:** [02-dalle-variacoes.ipynb](notebooks/02-dalle-variacoes.ipynb)
+
+Exploracao de diversidade visual:
+- Geracao de multiplas versoes com DALL-E 2
+- Criacao de variacoes a partir de arquivos locais
+- Analise comparativa entre versoes do modelo
+
+---
+
+### 3. Edicao de Imagens (Inpainting)
+**Arquivo:** [03-dalle-edicao.ipynb](notebooks/03-dalle-edicao.ipynb)
+
+Tecnicas avancadas de modificacao:
+- Edicao de regioes especificas usando mascaras
+- Adicao e remocao de elementos em imagens existentes
+- Casos de uso para design e prototipagem
+
+---
+
+## Modelos Disponiveis
 
 ![Infográfico: Geração de Imagens com DALL-E](../assets/imagens/tutorials/dalle-generation-flow.png)
 
 ### DALL-E 3
-- Modelo mais recente e avançado
-- Sempre gera 1 imagem por requisição
-- Melhor compreensão de prompts complexos
-- Tamanhos: `1024x1024`, `1792x1024`, `1024x1792`
-- Qualidade: `standard` ou `hd`
+- Modelo de ultima geracao com alta fidelidade.
+- Restricao de uma imagem por chamada.
+- Entendimento semantico superior para prompts complexos.
+- Dimensoes suportadas: 1024x1024, 1792x1024 (Wide), 1024x1792 (Tall).
+- Niveis de qualidade: standard e hd.
 
 ### DALL-E 2
-- Modelo anterior, ainda disponível
-- Pode gerar até 10 imagens por requisição
-- Tamanhos: `256x256`, `512x512`, `1024x1024`
-- Mais econômico, mas menos detalhado
+- Modelo anterior, otimizado para velocidade e custo.
+- Capacidade de gerar ate 10 imagens simultaneas.
+- Dimensoes: 256x256, 512x512, 1024x1024.
+- Recomendado para variacoes e edicoes rapidas.
 
 ---
 
-## Dicas para Prompts Efetivos
+## Engenharia de Prompt para Imagens
 
-1. **Seja específico e descritivo**
-   - Mencione estilo artístico se desejar
-   - Inclua detalhes sobre cores, iluminação, composição
-
-2. **Evite prompts muito longos**
-   - DALL-E 3 reescreve automaticamente prompts longos
-   - Seja conciso mas detalhado
-
-3. **Mencione qualidade desejada**
-   - "fotografia profissional"
-   - "ilustração digital"
-   - "pintura a óleo"
+1. Especificidade: Descrever estilo artistico, iluminacao e composicao (ex: "cinematic light", "isometric 3D", "oil painting").
+2. Concisao: Evitar textos redundantes; o DALL-E 3 ja realiza um refinamento automatico dos prompts.
+3. Qualidade: Indicar explicitamente o acabamento desejado (ex: "high definition", "professional photography").
 
 ---
 
-## Custos
+## Estrutura de Custos
 
-- **DALL-E 3 Standard (1024x1024)**: $0.04 por imagem
-- **DALL-E 3 HD (1024x1024)**: $0.08 por imagem
-- **DALL-E 2 (1024x1024)**: $0.02 por imagem
+- DALL-E 3 Standard: $0.04 por imagem (1024x1024).
+- DALL-E 3 HD: $0.08 por imagem (1024x1024).
+- DALL-E 2: $0.02 por imagem (1024x1024).
 
 ---
 
-## Referências
+## Referencias Tecnicas
 
-- [Documentação - DALL-E](https://platform.openai.com/docs/guides/images)
-- [API Reference - Images](https://platform.openai.com/docs/api-reference/images)
-
-
-
-
-
+- Documentacao Oficial - DALL-E
+- API Reference - Images
+- Guia de Prompt Engineering para Imagens
