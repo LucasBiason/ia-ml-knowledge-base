@@ -38,24 +38,13 @@ Explore todos os parâmetros da API:
 
 ---
 
-### 04 - Function Calling
-**Arquivo:** `notebooks/04-funcoes-function-calling.ipynb` (Em breve)
-
-Integre o GPT com funções externas:
-- Definir funções para o modelo chamar
-- Processar respostas com function calls
-- Casos de uso práticos
-
----
-
 ## Ordem Recomendada de Estudo
 
 1. **01 - Conversa Básica** (Fundamentos)
 2. **02 - Agentes Especializados** (Aplicação prática)
 3. **03 - Parâmetros Avançados** (Otimização)
-4. **04 - Function Calling** (Integração avançada)
 
-**Nota:** Para extração de dados JSON integrando múltiplas APIs (Chat + Vision + Audio), veja **06-Advanced/01-Extração de Dados JSON**.
+**Nota:** Temas avançados como **Function Calling** e **Extração de Dados JSON** integrando múltiplas APIs (Chat + Vision + Audio) estão localizados no módulo **06-Advanced**.
 
 ---
 
