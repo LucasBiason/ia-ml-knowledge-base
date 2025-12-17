@@ -19,11 +19,6 @@ Este diretório contém as respostas resolvidas dos exercícios dos tutoriais de
 - `tut-03-ex-02-comparar-configuracoes.py` - Comparação entre diferentes combinações de parâmetros.
 - `tut-03-ex-03-controlar-custos.py` - Estratégias de controle de custos e uso de tokens.
 
-### Tutorial 04: Function Calling
-- `tut-04-ex-01-funcao-busca.py` - Implementação de busca inteligente em catálogo de produtos.
-- `tut-04-ex-02-agente-multiplas-funcoes.py` - Agente capaz de coordenar múltiplas ferramentas.
-- `tut-04-ex-03-sistema-agendamento.py` - Sistema de agendamento automatizado com verificação de conflitos.
-
 ---
 
 ## Como Executar
@@ -40,8 +35,8 @@ pip install openai python-dotenv pandas
 3. Execute cada arquivo Python:
 
 ```bash
-# Exemplo: Tutorial 04, Exercício 1
-python tut-04-ex-01-funcao-busca.py
+# Exemplo: Tutorial 02, Exercício 3
+python tut-02-ex-03-integracao-dados-reais.py
 ```
 
 **Nota:** O Exercício 3 do Tutorial 02 (`tut-02-ex-03-integracao-dados-reais.py`) usa o arquivo `assets/produtos.csv` que já está disponível na pasta assets.
@@ -65,4 +60,5 @@ Todos os exercícios são baseados nos tutoriais:
 - **01-conversa-basica.ipynb**
 - **02-agentes-especializados.ipynb**
 - **03-parametros-avancados.ipynb**
-- **04-funcoes-function-calling.ipynb**
+
+*Nota: O tutorial de Function Calling e seus exercícios foram movidos para a pasta `06-Advanced` devido à sua natureza avançada de integração.*
