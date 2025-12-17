@@ -1,49 +1,42 @@
-# Respostas dos Exercícios - Advanced
+# Respostas dos Exercicios - Advanced
 
-Este diretório contém as respostas resolvidas dos exercícios do módulo Advanced.
-
-## Exercícios por Tutorial
-
-### Tutorial 01: Extração de Dados JSON
-Este tutorial demonstra a integração de múltiplas APIs (Chat, Vision e Audio) para extrair dados estruturados.
-
-- `tut-01-ex-01-extrair-dados-email.py`: Sistema de extração de leads e contatos de e-mails não estruturados.
-- `tut-01-ex-02-processar-multiplos-documentos.py`: Automação para processamento em lote de arquivos PDF e normalização de dados.
-- `tut-01-ex-03-validacao-tratamento-erros.py`: Implementação de validação de schema e tratamento de erros para pipelines de extração.
-
-### Tutorial 02: Function Calling
-Este tutorial foca em como permitir que o modelo execute funções Python para acessar dados externos e realizar ações.
-
-- `tut-02-ex-01-funcao-busca.py`: Implementação de busca inteligente em catálogo de produtos.
-- `tut-02-ex-02-agente-multiplas-funcoes.py`: Agente capaz de realizar cálculos e conversões usando múltiplas ferramentas.
-- `tut-02-ex-03-sistema-agendamento.py`: Sistema de agendamento com verificação de disponibilidade e criação de compromissos.
+Este diretorio contem as solucoes estruturadas para os exercicios propostos no modulo Advanced. Os scripts seguem padroes de codificacao limpa e tratamento de erros robusto.
 
 ---
 
-## Como Executar
+## Solucoes por Tutorial
 
-1. Certifique-se de ter o arquivo `.env` configurado com `OPENAI_API_KEY` na raiz do projeto.
-2. Instale as dependências necessárias:
-```bash
-pip install openai python-dotenv pypdf
-```
-3. Execute os scripts individuais:
+### Tutorial 01: Extracao de Dados em JSON
+Solucoes focadas em transformar informacoes heterogeneas em estruturas padronizadas.
+
+- [tut-01-ex-01-extrair-dados-email.py](tut-01-ex-01-extrair-dados-email.py): Extrator de leads a partir de corpos de e-mail nao estruturados.
+- [tut-01-ex-02-processar-multiplos-documentos.py](tut-01-ex-02-processar-multiplos-documentos.py): Pipeline para leitura e consolidacao de multiplos arquivos PDF.
+- [tut-01-ex-03-validacao-tratamento-erros.py](tut-01-ex-03-validacao-tratamento-erros.py): Implementacao de schemas de validacao e logs de processamento.
+
+---
+
+### Tutorial 02: Function Calling
+Solucoes demonstrando a integracao do modelo com funcoes Python externas.
+
+- [tut-02-ex-01-funcao-busca.py](tut-02-ex-01-funcao-busca.py): Agente de consulta em catalogo de inventario.
+- [tut-02-ex-02-agente-multiplas-funcoes.py](tut-02-ex-02-agente-multiplas-funcoes.py): Implementacao de agente capaz de alternar entre ferramentas de calculo e conversao.
+- [tut-02-ex-03-sistema-agendamento.py](tut-02-ex-03-sistema-agendamento.py): Logica de agendamento com verificacao de conflitos de horario.
+
+---
+
+## Instrucoes de Execucao
+
+1. Certifique-se de que o arquivo `.env` esta configurado na raiz do projeto.
+2. Instale as dependencias especificadas no modulo raiz ou individualmente via pip.
+3. Os scripts sao independentes e podem ser executados diretamente:
 ```bash
 python tut-01-ex-01-extrair-dados-email.py
 ```
 
 ---
 
-## Estrutura dos Arquivos
+## Padroes de Codificacao
 
-Cada arquivo segue o padrão de documentação do curso:
-- **Docstring Inicial**: Contextualização e conceitos-chave.
-- **Identificação**: Vinculação direta com o tutorial original.
-- **Tratamento de Erros**: Exemplos robustos de uso da API.
-- **Tom Natural**: Explicações didáticas sem jargões de IA.
-
----
-
-## Referências
-- **01-extracao-dados-json.ipynb**
-- **02-funcoes-function-calling.ipynb**
+- **Docstrings**: Todos os scripts incluem documentacao inicial sobre o proposito e conceitos aplicados.
+- **Tratamento de Erros**: Uso de blocos try-except para lidar com falhas de rede e erros de parsing JSON.
+- **Identificacao**: Cada arquivo possui uma referencia direta ao tutorial correspondente no notebook.
