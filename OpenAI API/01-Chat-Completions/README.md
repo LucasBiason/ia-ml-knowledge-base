@@ -50,6 +50,8 @@ Explore todos os parâmetros da API:
 
 ## Conceitos-Chave
 
+![Infográfico: Fluxo de Chat Completions](../assets/imagens/tutorials/chat-completions-flow.png)
+
 ### Roles (Papéis)
 - **system**: Define contexto e comportamento do assistente
 - **user**: Mensagens do usuário final
