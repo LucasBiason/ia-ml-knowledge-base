@@ -1,0 +1,48 @@
+graph TD
+    subgraph Text["Modelos de Texto"]
+        GPT35[GPT-3.5-turbo<br/>Rápido e Econômico<br/>~16k tokens]
+        GPT4[GPT-4<br/>Alta Qualidade<br/>~8k tokens]
+        GPT4Turbo[GPT-4 Turbo<br/>Otimizado<br/>~128k tokens]
+    end
+
+    subgraph Image["Geração de Imagens"]
+        Dalle2[DALL-E 2<br/>Até 10 imagens<br/>256x256 a 1024x1024]
+        Dalle3[DALL-E 3<br/>1 imagem<br/>1024x1024, 1792x1024]
+    end
+
+    subgraph Audio["Áudio"]
+        TTS1[TTS-1<br/>Padrão<br/>6 vozes]
+        TTS1HD[TTS-1-HD<br/>Alta Qualidade<br/>6 vozes]
+        Whisper[Whisper-1<br/>Transcrição<br/>99 idiomas]
+    end
+
+    subgraph Embed["Embeddings"]
+        EmbSmall[text-embedding-3-small<br/>1536 dimensões]
+        EmbLarge[text-embedding-3-large<br/>3072 dimensões]
+    end
+
+    subgraph UseCases["Casos de Uso"]
+        Chat[Chatbots<br/>Assistentes]
+        Analysis[Análise<br/>Relatórios]
+        Content[Geração de<br/>Conteúdo]
+        ImagesUse[Marketing<br/>Ilustrações]
+        Voice[Assistente<br/>de Voz]
+        Transcribe[Transcrição<br/>Legendagem]
+        Search[Busca<br/>Semântica]
+    end
+
+    GPT35 --> Chat
+    GPT4 --> Analysis
+    GPT4Turbo --> Content
+    Dalle2 --> ImagesUse
+    Dalle3 --> ImagesUse
+    TTS1 --> Voice
+    TTS1HD --> Voice
+    Whisper --> Transcribe
+    EmbSmall --> Search
+    EmbLarge --> Search
+
+
+
+
+

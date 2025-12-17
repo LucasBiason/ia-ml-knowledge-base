@@ -1,0 +1,40 @@
+graph TB
+    subgraph Input["Input"]
+        Docs[Documentos de Texto<br/>FAQ, Artigos, etc.]
+        Query[Consulta do Usuário]
+    end
+
+    subgraph Embedding["Vetorização"]
+        Model[Modelo de Embedding<br/>text-embedding-3-small/large]
+        DocVectors[Vetores dos Documentos<br/>1536 ou 3072 dimensões]
+        QueryVector[Vetor da Consulta]
+    end
+
+    subgraph Storage["Armazenamento"]
+        VectorDB[(Banco Vetorial<br/>FAISS, Pinecone, etc.)]
+    end
+
+    subgraph Search["Busca"]
+        Cosine[Similaridade Coseno]
+        Ranking[Ranking por Similaridade]
+        Results[Documentos Mais Similares]
+    end
+
+    Docs --> Model
+    Query --> Model
+    Model --> DocVectors
+    Model --> QueryVector
+    DocVectors --> VectorDB
+    QueryVector --> Cosine
+    VectorDB --> Cosine
+    Cosine --> Ranking
+    Ranking --> Results
+
+    style Model fill:#e1f5ff
+    style VectorDB fill:#fff4e1
+    style Results fill:#e8f5e9
+
+
+
+
+

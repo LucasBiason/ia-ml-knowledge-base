@@ -1,7 +1,3 @@
-<div align="center">
-  <img src="assets/banner.png" alt="AI ML Knowledge Base" width="100%"/>
-</div>
-
 # 🧠 IA-ML-KNOWLEDGE-BASE
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -10,7 +6,7 @@
 [![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange.svg)](https://github.com/LucasBiason/ia-ml-knowledge-base)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue.svg)](https://github.com/LucasBiason/ia-ml-knowledge-base/actions)
 
-> **Base de Conhecimento Completa em Inteligência Artificial e Machine Learning**  
+> **Base de Conhecimento Completa em Inteligência Artificial e Machine Learning**
 > Um banco consolidando estudos, projetos práticos e documentação técnica avançada.
 
 ---

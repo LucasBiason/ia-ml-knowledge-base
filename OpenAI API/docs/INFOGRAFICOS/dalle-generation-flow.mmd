@@ -1,0 +1,37 @@
+flowchart TD
+    Start([Usuário envia Prompt]) --> Validate{Validar Prompt}
+    Validate -->|Inválido| Error[Erro: Prompt inválido]
+    Validate -->|Válido| Process[Processar Prompt]
+
+    Process --> Rewrite{DALL-E 3?}
+    Rewrite -->|Sim| AutoRewrite[Reescrever Prompt<br/>Automaticamente]
+    Rewrite -->|Não| Direct[Usar Prompt Original]
+
+    AutoRewrite --> ModelSelect{Selecionar Modelo}
+    Direct --> ModelSelect
+
+    ModelSelect -->|DALL-E 3| Dalle3[DALL-E 3<br/>1 imagem]
+    ModelSelect -->|DALL-E 2| Dalle2[DALL-E 2<br/>Até 10 imagens]
+
+    Dalle3 --> Generate3[Gerar Imagem<br/>1024x1024, 1792x1024<br/>ou 1024x1792]
+    Dalle2 --> Generate2[Gerar Imagem<br/>256x256, 512x512<br/>ou 1024x1024]
+
+    Generate3 --> Quality{Quality?}
+    Generate2 --> Save2[Salvar URL]
+
+    Quality -->|standard| Standard[Qualidade Standard]
+    Quality -->|hd| HD[Qualidade HD]
+
+    Standard --> Save3[Salvar URL]
+    HD --> Save3
+
+    Save2 --> Return[Retornar URL]
+    Save3 --> Return
+
+    Return --> End([Usuário recebe URL])
+    Error --> End
+
+
+
+
+

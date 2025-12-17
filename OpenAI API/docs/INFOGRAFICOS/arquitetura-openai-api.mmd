@@ -1,0 +1,66 @@
+graph TB
+    subgraph Client["Cliente (Aplicação)"]
+        App[App Python/JS/etc]
+        Env[Variáveis de Ambiente]
+    end
+
+    subgraph API["OpenAI API"]
+        Auth[Autenticação<br/>API Key]
+        Router[Router de Endpoints]
+
+        subgraph Endpoints["Endpoints Disponíveis"]
+            Chat[Chat Completions<br/>/v1/chat/completions]
+            Images[Image Generation<br/>/v1/images/generations]
+            AudioTTS[Text-to-Speech<br/>/v1/audio/speech]
+            AudioSTT[Speech-to-Text<br/>/v1/audio/transcriptions]
+            Embed[Embeddings<br/>/v1/embeddings]
+        end
+    end
+
+    subgraph Models["Modelos"]
+        GPT35[GPT-3.5-turbo]
+        GPT4[GPT-4 / GPT-4 Turbo]
+        Dalle2[DALL-E 2]
+        Dalle3[DALL-E 3]
+        Whisper[Whisper-1]
+        TTS1[TTS-1 / TTS-1-HD]
+        EmbSmall[text-embedding-3-small]
+        EmbLarge[text-embedding-3-large]
+    end
+
+    subgraph Processing["Processamento"]
+        Tokenizer[Tokenização]
+        Transformer[Transformer Layers]
+        Attention[Attention Mechanism]
+        Generation[Geração de Resposta]
+    end
+
+    App -->|Requisição HTTP| Auth
+    Env -->|API Key| Auth
+    Auth -->|Autenticado| Router
+    Router --> Chat
+    Router --> Images
+    Router --> AudioTTS
+    Router --> AudioSTT
+    Router --> Embed
+
+    Chat --> GPT35
+    Chat --> GPT4
+    Images --> Dalle2
+    Images --> Dalle3
+    AudioTTS --> TTS1
+    AudioSTT --> Whisper
+    Embed --> EmbSmall
+    Embed --> EmbLarge
+
+    GPT35 --> Tokenizer
+    GPT4 --> Tokenizer
+    Tokenizer --> Transformer
+    Transformer --> Attention
+    Attention --> Generation
+    Generation -->|Resposta| App
+
+
+
+
+

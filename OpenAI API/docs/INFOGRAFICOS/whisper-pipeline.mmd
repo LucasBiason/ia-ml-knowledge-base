@@ -1,0 +1,36 @@
+flowchart LR
+    Audio[Arquivo de Áudio<br/>mp3, wav, etc.] --> Upload[Upload para API]
+    Upload --> Validate{Validar Arquivo}
+
+    Validate -->|Tamanho > 25MB| Error[Erro: Arquivo muito grande]
+    Validate -->|Formato inválido| Error2[Erro: Formato não suportado]
+    Validate -->|Válido| Process[Processar com Whisper-1]
+
+    Process --> Detect{Detectar Idioma?}
+    Detect -->|language especificado| UseLang[Usar Idioma Especificado]
+    Detect -->|Não especificado| AutoDetect[Detecção Automática]
+
+    UseLang --> Transcribe[Transcrever Áudio]
+    AutoDetect --> Transcribe
+
+    Transcribe --> Format{Formato de Resposta?}
+
+    Format -->|json| JSON[Retornar JSON<br/>Apenas texto]
+    Format -->|text| TEXT[Retornar Texto<br/>Simples]
+    Format -->|srt| SRT[Retornar SRT<br/>Legendas com timestamps]
+    Format -->|vtt| VTT[Retornar VTT<br/>WebVTT]
+    Format -->|verbose_json| VERBOSE[Retornar JSON Detalhado<br/>Texto + metadados]
+
+    JSON --> Result[Resultado]
+    TEXT --> Result
+    SRT --> Result
+    VTT --> Result
+    VERBOSE --> Result
+
+    Error --> Result
+    Error2 --> Result
+
+
+
+
+

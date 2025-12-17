@@ -1,0 +1,32 @@
+sequenceDiagram
+    participant Client as Cliente
+    participant API as OpenAI API
+    participant Model as Modelo GPT
+    participant Tokenizer as Tokenizador
+
+    Client->>API: POST /v1/chat/completions<br/>{messages, model, params}
+    API->>API: Validar API Key
+    API->>API: Validar Parâmetros
+    API->>Tokenizer: Tokenizar Mensagens
+    Tokenizer->>Model: Enviar Tokens
+
+    Note over Model: Processamento Transformer
+    Note over Model: Attention Mechanism
+    Note over Model: Geração de Tokens
+
+    Model->>Model: Calcular Probabilidades
+    Model->>Model: Aplicar Temperature/Top-P
+    Model->>Model: Selecionar Próximo Token
+    Model->>Tokenizer: Tokens Gerados
+
+    Tokenizer->>API: Texto Decodificado
+    API->>API: Aplicar max_tokens
+    API->>API: Aplicar stop sequences
+    API->>Client: Resposta JSON<br/>{choices, usage, ...}
+
+    Note over Client: Processar Resposta
+
+
+
+
+

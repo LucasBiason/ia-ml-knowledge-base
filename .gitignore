@@ -4,6 +4,7 @@ credentials.json
 
 # Arquivos de configuração sensíveis
 .env
+.venv/
 venv/
 config.env
 *chroma/
@@ -31,6 +32,7 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.ipynb_checkpoints/
 
 # Ambientes virtuais
 venv/
@@ -51,4 +53,12 @@ venv.bak/
 
 # Arquivos temporários
 *.tmp
-*.temp 
+*.temp
+
+# Documentação privada (não versionada)
+docs-private/
+
+# Arquivos de output (imagens, áudios gerados, etc.)
+**/outputs/
+**/*_output/
+**/output/

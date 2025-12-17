@@ -1,0 +1,27 @@
+sequenceDiagram
+    participant Client as Cliente
+    participant API as OpenAI API
+    participant Vision as GPT-4 Vision
+    participant ImageProc as Processamento de Imagem
+
+    Client->>API: POST /v1/chat/completions<br/>{messages com imagem}
+    API->>API: Validar Formato da Imagem
+    API->>ImageProc: Decodificar Base64
+
+    Note over ImageProc: Preparar Imagem<br/>Redimensionar se necessário
+
+    ImageProc->>Vision: Enviar Imagem + Prompt
+    Vision->>Vision: Análise Visual
+    Vision->>Vision: OCR (se necessário)
+    Vision->>Vision: Descrição de Conteúdo
+    Vision->>Vision: Análise de Elementos
+
+    Vision->>API: Resposta Textual
+    API->>Client: JSON com Análise
+
+    Note over Client: Processar Análise<br/>Extrair Informações
+
+
+
+
+
