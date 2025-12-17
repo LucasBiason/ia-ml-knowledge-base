@@ -6,6 +6,8 @@
 
 ## O que é OpenAI?
 
+![Infográfico: A Jornada da OpenAI](../../docs/INFOGRAFICOS/infografico-openai-final.png)
+
 A OpenAI é uma empresa de pesquisa em inteligência artificial fundada em 2015 com o objetivo de desenvolver IA de forma segura e benéfica para a humanidade. A organização começou como uma entidade sem fins lucrativos e em 2019 se tornou uma "capped-profit" company para atrair investimentos necessários ao desenvolvimento de modelos avançados.
 
 ## História e Evolução
