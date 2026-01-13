@@ -1,105 +1,187 @@
-# 🧠 IA-ML-KNOWLEDGE-BASE
+# IA/ML Knowledge Base
 
-[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-orange.svg)](https://github.com/LucasBiason/ia-ml-knowledge-base)
-[![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-blue.svg)](https://github.com/LucasBiason/ia-ml-knowledge-base/actions)
+**Inteligência Artificial e Machine Learning aplicados, documentados a partir de estudo prático e projetos reais.**
 
-> **Base de Conhecimento Completa em Inteligência Artificial e Machine Learning**
-> Um banco consolidando estudos, projetos práticos e documentação técnica avançada.
+Este repositório faz parte da iniciativa **Engineering Knowledge Base**. O objetivo não é criar um "mega banco de conhecimento", mas documentar estudos aplicados, decisões técnicas e casos práticos de IA e Machine Learning.
+
+O conteúdo reflete experimentação real, projetos desenvolvidos e aprendizado incremental.
 
 ---
 
-## 🎯 **OBJETIVO DO PROJETO**
+## Sobre este repositório
 
-Este repositório representa um **mega banco de conhecimento** sobre Inteligência Artificial e Machine Learning, consolidando:
+Este repositório documenta minha prática contínua em Inteligência Artificial e Machine Learning, focando em aplicação real, não em teoria abstrata.
 
-- 📚 **Conhecimentos técnicos** de múltiplas fontes (cursos, apostilas)
-- 🛠️ **Projetos práticos** desenvolvidos com padrões profissionais
-- 📖 **200+ páginas** de documentação técnica especializada
-- 💬 **100+ prompts** catalogados e testados
+**Este repositório não é:**
+- Um curso completo de IA/ML
+- Material gerado automaticamente
+- Uma coleção de tutoriais genéricos
+- Um "mega banco de conhecimento" promocional
 
-### **🎯 Metas Específicas**
-- 🛠️ Desenvolver APIs profissionais
-- 📚 Criar documentação técnica de referência
-- 💼 Construir banco de conhecimento
-- 📝 Publicar artigos técnicos (Hashnode, Dev.to)
+**Este repositório é:**
+- Documentação de estudos aplicados
+- Casos práticos de projetos reais
+- Decisões técnicas justificadas
+- Base de referência para consulta
 
 ---
 
-## 📁 **ESTRUTURA DO PROJETO**
+## Objetivo
 
-O projeto está organizado **por temas dentro de Inteligência Artificial**:
+Consolidar conhecimento sobre IA e ML através de:
+
+- Projetos práticos desenvolvidos com padrões profissionais
+- Documentação técnica especializada
+- Integrações reais com APIs e serviços
+- Casos de uso documentados
+
+---
+
+## O que você vai encontrar aqui
+
+### Machine Learning
+- Algoritmos clássicos de ML (scikit-learn)
+- Pipelines de treinamento e avaliação
+- Projetos práticos
+
+### Deep Learning
+- Redes neurais profundas
+- TensorFlow/PyTorch
+- Arquiteturas e otimizações
+
+### LLMs (Large Language Models)
+- Integração com OpenAI API
+- Integração com Gemini API
+- Prompts catalogados e testados
+- Casos de uso práticos
+
+### LangChain
+- Framework para construção de aplicações com LLMs
+- Agentes e chains
+- RAG (Retrieval-Augmented Generation)
+
+### Computer Vision
+- Processamento de imagens
+- Detecção de objetos
+- Aplicações práticas
+
+### NLP (Natural Language Processing)
+- Processamento de linguagem natural
+- Análise de texto
+- Casos práticos
+
+### OpenAI API
+- Integrações completas
+- Documentação técnica
+- Exemplos práticos
+
+### AWS ML Services
+- Serviços AWS para Machine Learning
+- Integrações e casos de uso
+
+### MLOps
+- Deploy e monitoramento de modelos
+- Pipelines de produção
+- Boas práticas
+
+---
+
+## O que você NÃO vai encontrar
+
+- Conteúdo gerado automaticamente
+- Tutoriais genéricos de "aprenda ML do zero"
+- Promessas de "200+ páginas" ou números inflados
+- Material sem contexto ou justificativa técnica
+
+---
+
+## Estrutura
 
 ```
 ia-ml-knowledge-base/
-├── Machine Learning/          # ML tradicional, scikit-learn
+├── Machine Learning/          # ML tradicional
+│   ├── notebooks/
+│   ├── tutorials/
+│   └── projects/
+│
 ├── Deep Learning/             # Redes neurais profundas
+│   ├── notebooks/
+│   └── projects/
+│
 ├── LLMs/                     # Large Language Models
+│   ├── notebooks/
+│   └── prompts/
+│
 ├── LangChain/                # Framework para LLMs
+│   ├── notebooks/
+│   └── projects/
+│
 ├── Computer Vision/          # Visão computacional
+│   ├── notebooks/
+│   └── projects/
+│
 ├── NLP/                      # Processamento de linguagem natural
+│   ├── notebooks/
+│   └── projects/
+│
 ├── OpenAI API/                # Integrações OpenAI
-├── AWS ML Services/          # Serviços AWS para ML
+│   ├── notebooks/
+│   ├── docs/
+│   └── examples/
+│
+├── AWS ML Services/          # Serviços AWS
+│   └── notebooks/
+│
 ├── MLOps/                    # Deploy e monitoramento
-└── articles/                 # Artigos formatados para publicação
+│   ├── notebooks/
+│   └── projects/
+│
+├── docs/                     # Documentação adicional
+│   └── roadmap.md
+│
+└── templates/                # Templates
+    └── notebook-template.ipynb
 ```
 
-Cada tema contém:
-- `notebooks/` - Notebooks Jupyter práticos
-- `tutorials/` - Tutoriais passo a passo
-- `projects/` - Projetos completos
-- `snippets/` - Códigos reutilizáveis
+---
+
+## Público-alvo
+
+- Engenheiros de software interessados em IA aplicada
+- Desenvolvedores trabalhando com LLMs
+- Profissionais de produto explorando IA
+- Estudantes consolidando conhecimentos práticos
 
 ---
 
-## 🛠️ **STACK UTILIZADA**
+## Como este conteúdo é produzido
 
-### **🔧 Tecnologias Principais**
-- **Python 3.9+** - Linguagem principal
-- **FastAPI** - Framework web para APIs
-- **Docker & Docker Compose** - Containerização
-- **PostgreSQL** - Banco de dados principal
-- **Redis** - Cache e filas
-
-### **🤖 Machine Learning & IA**
-- **scikit-learn** - Algoritmos de ML
-- **TensorFlow/PyTorch** - Deep Learning
-- **LangChain** - Framework para LLMs
-- **OpenAI API** - Integração com GPT
-- **Gemini API** - Integração com Gemini
-
-### **🔍 Qualidade & Testes**
-- **pytest** - Framework de testes
-- **Black** - Formatação de código
-- **isort** - Organização de imports
-- **flake8** - Linting
+- **Escrita manual e incremental:** Cada notebook é escrito manualmente
+- **Projetos reais:** Conteúdo baseado em projetos desenvolvidos
+- **Decisões documentadas:** Justificativas técnicas explícitas
+- **Evolução contínua:** Conteúdo cresce ao longo do tempo
 
 ---
 
-## 📚 **NAVEGAÇÃO RÁPIDA**
+## Relação com o Ecossistema
 
-### **Por Tema:**
-- [Machine Learning](./Machine%20Learning/) - Algoritmos clássicos de ML
-- [Deep Learning](./Deep%20Learning/) - Redes neurais profundas
-- [LLMs](./LLMs/) - Large Language Models
-- [LangChain](./LangChain/) - Framework para LLMs
-- [Computer Vision](./Computer%20Vision/) - Visão computacional
-- [NLP](./NLP/) - Processamento de linguagem natural
-- [OpenAI API](./OpenAI%20API/) - Integrações OpenAI
-- [AWS ML Services](./AWS%20ML%20Services/) - Serviços AWS
-- [MLOps](./MLOps/) - Deploy e monitoramento
+Este repositório faz parte do **Engineering Knowledge Base**.
 
-### **Documentação:**
-- [CONTRIBUTING.md](./CONTRIBUTING.md) - Guia de contribuição
-- [docs-private/](./docs-private/) - Documentação privada (não versionada)
+- **Base teórica para:** Hackathon Threat Modeling (YOLO, visão computacional)
+- **Conecta com:**
+  - Data Science KB (pré-requisito para ML)
+  - Programming KB (algoritmos fundamentais)
+  - Microservices KB (ML em produção, MLOps)
+- **Aplica em:**
+  - Hackathon FIAP Fase 5 (YOLO para detecção de componentes)
+  - Projetos de portfólio (ML Sales Forecasting, ML Spam Classifier)
 
 ---
 
-## 🚀 **COMO USAR**
+## Como usar
 
-### **Instalação:**
+### Instalação
+
 ```bash
 # Clone o repositório
 git clone https://github.com/LucasBiason/ia-ml-knowledge-base.git
@@ -115,7 +197,8 @@ source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
-### **Executar Notebooks:**
+### Executar Notebooks
+
 ```bash
 # Inicie o Jupyter
 jupyter notebook
@@ -126,10 +209,51 @@ jupyter lab
 
 ---
 
-## 📝 **LICENÇA**
+## Stack Utilizada
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+### Tecnologias Principais
+- **Python 3.9+** - Linguagem principal
+- **FastAPI** - Framework web para APIs
+- **Docker & Docker Compose** - Containerização
+- **PostgreSQL** - Banco de dados
+- **Redis** - Cache e filas
+
+### Machine Learning & IA
+- **scikit-learn** - Algoritmos de ML
+- **TensorFlow/PyTorch** - Deep Learning
+- **LangChain** - Framework para LLMs
+- **OpenAI API** - Integração com GPT
+- **Gemini API** - Integração com Gemini
+
+### Qualidade & Testes
+- **pytest** - Framework de testes
+- **Black** - Formatação de código
+- **isort** - Organização de imports
+- **flake8** - Linting
 
 ---
 
-*Desenvolvido com ❤️ por Lucas Biason para consolidar conhecimentos em IA/ML e criar um banco de conhecimento completo.*
+## Status
+
+**Em desenvolvimento contínuo.**
+
+Conteúdo é adicionado incrementalmente conforme projetos e estudos avançam.
+
+---
+
+## Outros repositórios da Knowledge Base
+
+- **[Engineering Knowledge Base](../engineering-knowledge-base/)** - Hub central do ecossistema
+- **[Programming Knowledge Base](../programming-knowledge-base/)** - Fundamentos algorítmicos
+- **[Data Science Knowledge Base](../data-science-knowledge-base/)** - Manipulação e análise de dados
+- **[Microservices Knowledge Base](../microservices-knowledge-base/)** - Arquitetura de sistemas distribuídos
+
+---
+
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+---
+
+*Desenvolvido por Lucas Biason para consolidar conhecimentos em IA/ML e criar uma base de referência prática.*
